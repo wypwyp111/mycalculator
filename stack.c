@@ -3,7 +3,8 @@
 #include "stack.h"
 #include <string.h>
 
-Stack * create_stack(int initial_size)
+int globla_var=969;
+
 {
 	Stack * s = (Stack *)malloc(sizeof(Stack));
 	s->contents = (int *)malloc(initial_size*sizeof(Item));
